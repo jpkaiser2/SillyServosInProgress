@@ -115,7 +115,7 @@ public class main extends LinearOpMode {
                     fr /= speed;
                     bl /= speed;
                     br /= speed;
-
+ 
                     telemetry.addData("SPEED", speed);
                     telemetry.addData("FLP", fl);
                     telemetry.addData("FRP", fr);
