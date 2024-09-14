@@ -17,7 +17,7 @@ public class main extends LinearOpMode {
     private DcMotor backRight;
     private DcMotor hanger;
     private Servo drone;
- 
+  
     @Override
     public void runOpMode() throws InterruptedException { //if broken delete throws
         float x;
@@ -90,7 +90,7 @@ public class main extends LinearOpMode {
                 fr = y - x - clockwise;
                 bl = y - x + clockwise;
                 br = y + x - clockwise;
-
+                //hello worl
                 if(gamepad1.a){
                     hanger.setPower(1);
                 }
