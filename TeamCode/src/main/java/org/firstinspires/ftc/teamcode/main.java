@@ -135,27 +135,3 @@ public class main extends LinearOpMode {
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-System.out.println("hello world!");
-
-
-
-
-
-
