@@ -90,7 +90,7 @@ public class main extends LinearOpMode {
                 fr = y - x - clockwise;
                 bl = y - x + clockwise;
                 br = y + x - clockwise;
-                //hello worl
+
                 if(gamepad1.a){
                     hanger.setPower(1);
                 }
@@ -135,3 +135,27 @@ public class main extends LinearOpMode {
             }
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+System.out.println("hello world!");
+
+
+
+
+
+
