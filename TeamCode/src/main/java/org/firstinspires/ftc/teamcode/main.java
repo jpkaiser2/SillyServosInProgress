@@ -17,7 +17,7 @@ public class main extends LinearOpMode {
     private DcMotor backRight;
     private DcMotor hanger;
     private Servo drone;
-
+  
     @Override
     public void runOpMode() throws InterruptedException { //if broken delete throws
         float x;
@@ -36,7 +36,7 @@ public class main extends LinearOpMode {
         backRight = hardwareMap.get(DcMotor.class, "backRight");
         hanger = hardwareMap.get(DcMotor.class, "hanger");
         drone = hardwareMap.get(Servo.class, "drone");
-
+   
         drone = hardwareMap.get(Servo.class, "drone");
         drone.setDirection(Servo.Direction.REVERSE);
 
