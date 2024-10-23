@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
 @TeleOp
-public class main extends LinearOpMode {
+public class testDrive extends LinearOpMode {
     @Override
     public void runOpMode() throws InterruptedException {
         // Declare motors
@@ -16,6 +16,7 @@ public class main extends LinearOpMode {
         DcMotor backLeftMotor = hardwareMap.dcMotor.get("backLeft");
         DcMotor frontRightMotor = hardwareMap.dcMotor.get("frontRight");
         DcMotor backRightMotor = hardwareMap.dcMotor.get("backRight");
+
 
         // Reverse the left front motor.
         frontLeftMotor.setDirection(DcMotorSimple.Direction.REVERSE);
