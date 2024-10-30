@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 
 import org.firstinspires.ftc.robotcore.external.navigation.CurrentUnit;
 
-public class testAuto extends LinearOpMode {
+public class Auto6 extends LinearOpMode{
     /* Declare OpMode members. */
     private DcMotor frontLeft = null;
     private DcMotor frontRight = null;
@@ -116,16 +116,19 @@ public class testAuto extends LinearOpMode {
 
     public void movementSequence(){
         // Strafe left
-        strafeDrive(DRIVE_SPEED, -2, 2.0);
+        strafeDrive(DRIVE_SPEED, -6, 2.0);
 
         // Move forward
-        encoderDrive(DRIVE_SPEED, 88, 88, 88, 88, 5.0);  // All wheels forward
+        encoderDrive(DRIVE_SPEED, -23.5, -23.5, -23.5, -23.5, 5.0);  // All wheels forward
 
-        // Arm to collect(valid strings: "collect", "clear barrier", "score"
-        armDrive("collect", 5.0);
+        // Turn clockwise 45(need to test and figure out amount of inches)
+        encoderDrive(TURN_SPEED, -8, 8, -8, 8, 4.0);
+
+        // Arm to score(valid strings: "collect", "clear barrier", "score"
+        armDrive("score", 5.0);
 
         // Claw open(valid strings:"open", "close:
-        clawDrive("open", 5.0);
+        clawDrive("open", 3.0);
     }
 
     // For arm movements
