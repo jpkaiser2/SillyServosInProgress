@@ -93,7 +93,6 @@ public class teleTest extends LinearOpMode{
             // Adjust arm position with error factor
             armMotor.setTargetPosition((int) (armPosition));
             armMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            ((DcMotorEx) armMotor).setVelocity(2100);
             armMotor.setPower(1.0);
 
             // Control claw servos
