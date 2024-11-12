@@ -34,7 +34,7 @@ public class teleTest extends LinearOpMode{
     // Variables for arm position
     double armPosition = armCollapsedIntoRobot;
     double armPositionErrorFactor;
-
+    private int armTargetPosition = 0;
     @Override
     public void runOpMode() throws InterruptedException {
         // Initialize motors
@@ -88,6 +88,9 @@ public class teleTest extends LinearOpMode{
             }
             else if (gamepad1.y) {
                 armPosition = armScoreSampleInLow;
+            }
+            else {
+                ((DcMotorEx) armMotor).setVelocity(0);
             }
 
             // Adjust arm position with error factor
